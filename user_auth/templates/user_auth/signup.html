@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form action="{% url 'user_auth:signup' %}" method="post">
+        {% csrf_token %}
+
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" placeholder="Create your username(only letters and numbers)" 
+        name="username" required>
+        <br>
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name" id="first_name" placeholder="Enter your first name(only letters)" name="first_name" required> 
+        <br>
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name" id="last_name" placeholder="Enter your last name(only letters)" name="last_name" required>
+        <br>
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email Address" name="email" required>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Create your password" name="password" required>
+        <br>
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password" name="confirm_password" required>
+        <br>
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>
