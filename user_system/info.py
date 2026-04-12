@@ -3,5 +3,5 @@
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'conniebulafu@gmail.com'
-EMAIL_HOST_PASSWORD = 'Jesus100%control'
+EMAIL_HOST_PASSWORD = 'JesusEver'
 EMAIL_PORT = 587
