@@ -22,7 +22,7 @@ def signin(request):
         if user is not None: #if user credentials are correct,and the credentials match/are correct login user
             login(request, user)
             first_name = user.first_name
-            return render(request, 'user_auth/index.html', {'first_name': first_name})
+            return render(request, 'user_auth/profile.html', {'first_name': first_name})
 
         else:
             messages.error(request, 'Bad Credentials')

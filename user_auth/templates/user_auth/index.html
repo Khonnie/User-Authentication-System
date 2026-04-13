@@ -24,12 +24,12 @@
     <h3 class="text-center">Keep your notes safe and private</h3>
     </div>
     <!-- if user is logged in -->
-    {% if user.is_authenticated%}
+    <!-- {% if user.is_authenticated%}
     <h2>Hello {{first_name}}</h2>
     <h3>you re successfully logged in</h3>
     <button type="submit"><a href="{% url 'user_auth:signout' %}">SignOut</a></button>
 
-    {% else %}
+    {% else %} -->
     <div class=" container d-flex justify-content-center align-items-center gap-3 flex-column  w-50 pt-3 rounded pb-5 bg-light">
          <form action="{% url 'user_auth:signin' %}" method="post" class="w-50">
         {% csrf_token %}
